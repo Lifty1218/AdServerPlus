@@ -1,0 +1,88 @@
+.features-container {
+  padding: 12rem 0;
+  text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(57, 62, 70, 0.6),
+      rgba(34, 40, 49, 0.6)
+    ),
+    url("../../../Assets/homepage2.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #777;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  padding: 0 14%;
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  flex: 1 0 18rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .features {
+    padding: 0 8%;
+  }
+}
+
+/* 900 PX */
+@media only screen and (max-width: 56.25em) {
+  .features {
+    padding: 0 4%;
+  }
+  .feature-box {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .features {
+    flex-direction: column;
+    padding: 0 14%;
+  }
+  .feature-box {
+    margin-right: 0 !important;
+    margin-bottom: 4rem;
+  }
+}
+
+.feature-box:not(:last-child) {
+  margin-right: 7rem;
+}
+
+.feature-box-heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 3rem 0 1.5rem;
+}
+
+.feature-box-icon {
+  font-size: 7rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #393e46, #222831);
+  background-clip: none;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media only screen and (max-width: 56.25em) {
+  .feature-box__icon {
+    font-size: 6rem;
+  }
+}
+.feature-box:hover {
+  transform: scale(1.05) translateY(-1.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}

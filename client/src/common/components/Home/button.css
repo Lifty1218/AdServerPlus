@@ -1,0 +1,40 @@
+.custom-btn-shadow,
+.custom-btn-shadow:link,
+.custom-btn-shadow:visited,
+.custom-btn,
+.custom-btn:link,
+.custom-btn:visited {
+  padding: 1.6rem 2.8rem;
+  background-color: #00adb5;
+  border-radius: 0.6rem;
+  color: #eee;
+  font-size: 1.4rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+  z-index: 30;
+}
+
+.custom-btn-shadow,
+.custom-btn-shadow:link,
+.custom-btn-shadow:visited {
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn-shadow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 1.8rem rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn-shadow:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn-icon {
+  margin-right: 1.2rem;
+}
+
+.custom-btn-afterIcon{
+  margin-left: 1rem;
+}

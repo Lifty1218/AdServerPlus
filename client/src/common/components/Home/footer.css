@@ -1,0 +1,137 @@
+.footer {
+  background-color: #222831;
+  padding: 6rem 8% 7rem;
+  font-size: 1.4rem;
+  color: #eee;
+}
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__logo-box {
+    margin-bottom: 4rem;
+  }
+}
+
+.footer-logo {
+  font-size: 4.5rem;
+}
+
+.footer-container-main {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-container-main {
+    display: block;
+    text-align: center;
+  }
+}
+
+.left-container {
+  flex: 0 0 60%;
+}
+
+.right-container {
+  flex: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    padding: 4rem 2.5% 5.5rem;
+  }
+  .footer-container {
+    padding: 0 2%;
+  }
+  .left-container {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 4rem 10% 5.5rem;
+  }
+
+  .left-container {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    padding: 3rem 5% 3.5rem;
+  }
+  .footer__logo-box {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__navigation {
+  display: inline-block;
+  border-top: 1px solid #777;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__navigation {
+    border-top: none;
+  }
+}
+
+.footer__list {
+  list-style: none;
+  display: block;
+  padding: 0 1rem;
+}
+.footer__list-item {
+  display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+  .footer__list-item {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer__list-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer__list-item:not(:last-child) {
+    margin-right: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__list-item:not(:last-child) {
+    margin-right: 4.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer__list-item:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+.footer__link:link,
+.footer__link:visited {
+  color: #eee;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.footer__link:hover {
+  color: #00adb5;
+  transform: scale(1.2);
+  background-color: #393e46;
+}
+.footer__link:active {
+  transform: scale(1.1);
+}
+.footer__copyright {
+  border-top: 1px solid #777;
+  padding-top: 2rem;
+}
